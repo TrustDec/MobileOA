@@ -14,18 +14,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"/>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="100pt"
-        android:layout_height="30pt"
-        android:text="提交商务码"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/colorPrimaryDark"/>
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:id="@+id/loginButton1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher"/>
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:text="@string/button_name"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textSize="34sp"/>
 
 
 </LinearLayout>
