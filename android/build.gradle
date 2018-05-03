@@ -19,6 +19,13 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://maven.google.com' }
+        maven {
+            url "$projectDir/../node_modules/react-native/android"
+        }
+//        maven {
+//            url "/home/user/smallrui/Development/Android/AwesomeApp/node_modules/react-native/android"
+//        }
     }
 }
 
