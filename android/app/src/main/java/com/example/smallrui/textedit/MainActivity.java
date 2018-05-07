@@ -19,13 +19,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (!Settings.canDrawOverlays(this)) {
-                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                        Uri.parse("package:" + getPackageName()));
-                startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
-            }
-        }
+        setContentView(R.layout.activity_main);
+//        findViewById(R.id.tv_react_native).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, MyReactActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            if (!Settings.canDrawOverlays(this)) {
+//                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+//                        Uri.parse("package:" + getPackageName()));
+//                startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
+//            }
+//        }
 //        setContentView(R.layout.activity_main);
 //        loginButton1 = findViewById(R.id.loginButton1);
 //        loginButton2 = findViewById(R.id.loginButton2);
